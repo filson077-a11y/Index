@@ -1,27 +1,112 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
+<html>
 <head>
-    <!-- Kodowanie polskich znaków -->
-    <meta charset="UTF-8">
-    <title>Instrukcja - Mączyński</title>
+<meta charset="utf-8">
+<title> ZADANIE FORMULARZ </title>
 </head>
-<body>
+<body bgcolor="#703c91">
+<center><h1> Formularz zgloszeniowy na szkolny turniej E_Sportowy</h1></center>
+<form enctype="text/plain" action="mailto:mkryniew@wp.pl" subject="formularz_dane" method="Post">
+<br> <br> <br>
+<h3><p><a href="index.html"><font color="White">Powrót do strony głównej</font></a></p></h3>
+<center><h4> Czas spędzany na graniu: (tygodniowo)</h4></center> <br>
+<center>
+    <input type="radio" name="czas" value="malo"> 5 - 10 H
+    <input type="radio" name="czas" value="srednio"> 10 - 15 H 
+    <input type="radio" name="czas" value="duzo"> 20 - 25 H 	
+    <input type="radio" name="czas" value="duzo"> 30 H+
+</center>
+<TABLE>
+<TR height="100">
+<TD width="500"style="padding-top: -50px; vertical-align: top;">
+<b>Imię</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<input name="imie" size="22">
+<br><br>
+<b>Pseudonim</b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp &nbsp <input name="drugie" size="22">
+<br><br>
+<b>Tag drużyny </b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+&nbsp &nbsp &nbsp <input name="nazwisko" size="22">
+<br><br>
+<b>Email kontaktowy</b>&nbsp &nbsp &nbsp  &nbsp &nbsp<input name="login" size="22"><nobr>
+<br>
+<p> <b>Hasło profilu  </b>&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp <input type="password" name="Hasło Profilu"> &nbsp &nbsp  
+&nbsp
+<br><br>
+</TD>
 
-    <!-- Napis informacyjny -->
-    <h1>Tutaj będzie link do formularza / instrukcji</h1>
+<TR>
+  <TD width="300" style="vertical-align: top;">
+    <div style="margin-left: 700px;">
+      <center><font size="5" color="Black"><b>Wybierz swoją platformę</b></font></center>
+      <br> 
+       <select style="position: absolute; transform: translate(155px, -65px);">
+          <option value="PC">PC</option>
+          <option value="PS5">PS5</option>
+          <option value="XBOX">XBOX</option>
+          <option value="SWITCH">SWITCH</option>
+        </select> 
+      </center>
+</div>
+  </TD>
+  <TD width="500" style="vertical-align: top;">
+    <div style="margin-top: 200px; margin-left: -100px;">
+      
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="vertical-align: top; padding-right: 30px; font-weight: bold;">
+            Preferowany <br> kontroler
+          </td>
+          <td style="vertical-align: top;">
+            <input type="checkbox" name="Kontroler" value="Myszka + Klawiatura"> Myszka + Klawiatura<br><br>
+            <input type="checkbox" name="Kontroler" value="PAD"> PAD<br><br>
+            <input type="checkbox" name="Kontroler" value="inny"> Inny
+          </td>
+        </tr>
+     </table>
 
-    <!-- Prosty szkielet formularza ukryty w instrukcji -->
-    <form action="#" method="post">
-        <label>Imię i nazwisko ucznia: </label>
-        <input type="text" name="uczen" value="Filip Mączyński">
-        <input type="submit" value="Zatwierdź">
-    </form>
+      <br><br><br>
+      <nobr>Jeśli zaznaczyłeś "Inny"<br>to podaj swój kontroler. Maks: 40<br>znaków</nobr>
+      <br><br>
+      <input name="inna" size="25" maxlength="100">
 
-    <hr>
-    <!-- Powrót do strony głównej -->
-    <p><a href="index.html">Powrót do strony głównej</a></p>
+    </div>
+  </TD>
+</TR>
+<div style="position: absolute; top: 200px; right: 250px; width: 400px; z-index: 999;">
+  
+  <font size="4" color="Black"><b>Osiągnięcia w E-Sporcie (opcjonalne)</b></font>
+  <br><br>
+  <textarea name="osiagniecia" rows="6" cols="40" style="resize: none;"></textarea>
+  
+  <br><br><br>
+  <br> <br> <br>
+  <font size="4" color="Black"><b>W jakie gry chcesz zagrać?</b></font>
+  <br><br>
+  <br> <br>
+<input type="checkbox" name="gra" value="cs2"> Counter-Strike 2<br><br>
+  <input type="checkbox" name="gra" value="valorant"> Valorant<br><br>
+  <input type="checkbox" name="gra" value="ea_fc"> EA SPORTS FC (FIFA)<br><br>
+  <input type="checkbox" name="gra" value="fortnite"> Fortnite<br><br>
+  <input type="checkbox" name="gra" value="minecraft"> Minecraft<br><br>
 
-</body>
-</html>
+</div>
 
 
+<TR height="80">
+<TD style="padding-top: -50px; vertical-align: top;"><nobr><div style="margin-top: -300px;">Czy posiadasz komputer?</div></nobr>
+<br><br>
+<input type="radio" name="pyt3" value="Tak"> Tak
+<br><br>
+<input type="radio" name="pyt3" value="Nie"> Nie
+</TD>
+<TR height="100">
+<TD><button type="submit" formaction="Zapisz.html" style="height:100px; width:200px">Zapisz </button>
+</TD>
+<TD align="left">
+  <nobr><input type="Reset" value="Reset" style="height:100px; width:200px; margin-left: -500px;"></nobr>
+</TD>
+<TD align="right"> 
+<input type="submit" value="Wyślij" style="height:100px; width:200px; margin-right: -100px;"> </TD>
